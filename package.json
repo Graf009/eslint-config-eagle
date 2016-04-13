@@ -1,0 +1,21 @@
+{
+  "name": "@eslint-config-eagle",
+  "version": "1.0.0",
+  "description": "Shared ESLint config",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Graf009/eslint-config-eagle.git"
+  },
+  "author": "Oleg Orlov <mail@orlovoleg.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "babel-eslint": "^6.0.2",
+    "eslint": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^0.6.2",
+    "eslint-plugin-react": "^4.3.0"
+  },
+  "dependencies": {
+    "eslint-config-airbnb": "7.0.0"
+  }
+}
