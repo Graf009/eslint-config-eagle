@@ -1,5 +1,5 @@
 {
-  "name": "@eslint-config-eagle",
+  "name": "@eagle/eslint-config-eagle",
   "version": "1.0.0",
   "description": "Shared ESLint config",
   "main": "index.js",
