@@ -8,7 +8,7 @@ module.exports = {
     'max-len': [2, 140, 2, { 'ignoreUrls': true, 'ignoreComments': false }],
     'new-cap': 0,
     'no-use-before-define': 0,
-    'no-param-reassign': [2, { 'props': false }],
+    'no-param-reassign': 0,
     'no-shadow': 0,
     'semi': [ 2, "never" ],
     'valid-jsdoc': 2
