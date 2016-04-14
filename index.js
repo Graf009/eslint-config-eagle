@@ -9,6 +9,7 @@ module.exports = {
     'new-cap': 0,
     'no-use-before-define': 0,
     'no-param-reassign': [2, { 'props': false }],
+    'no-shadow': 0,
     'semi': [ 2, "never" ],
     'valid-jsdoc': 2
   }
