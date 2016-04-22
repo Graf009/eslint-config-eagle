@@ -7,7 +7,7 @@ Shared ESLint config.
 Our default export contains all of our ESLint rules, including EcmaScript 6+
 and React. It requires `eslint`, `eslint-plugin-react`, `eslint-plugin-jsx-a11y`, and `babel-eslint`.
 
-1. `npm install --save-dev @eagle/eslint-config-eagle eslint-plugin-react eslint-plugin-jsx-a11y babel-eslint eslint`
+1. `npm install --save-dev @eagle/eslint-config-eagle eslint-plugin-react eslint-plugin-import eslint-plugin-jsx-a11y babel-eslint eslint`
 2. add `"extends": "@eagle/eslint-config-eagle"` to your .eslintrc
 
 ## Repository
