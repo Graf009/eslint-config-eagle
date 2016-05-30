@@ -1,18 +1,22 @@
+var OFF = 0;
+var WARNING = 1;
+var ERROR = 2;
+
 module.exports = {
-  'parser': 'babel-eslint',
-  'extends': require.resolve('eslint-config-airbnb'),
-  "rules": {
-    'camelcase': 0,
-    'comma-dangle': [ 2, "never" ],
-    'consistent-return': 0,
-    'global-require': 0,
-    'max-len': [2, 140, 2, { 'ignoreUrls': true, 'ignoreComments': false }],
-    'new-cap': 0,
-    'no-param-reassign': 0,
-    'no-shadow': 0,
-    'no-underscore-dangle': 0,
-    'no-use-before-define': 0,
-    'semi': [ 2, "never" ],
-    'valid-jsdoc': 2
+  parser: require.resolve('babel-eslint'),
+  extends: require.resolve('eslint-config-airbnb'),
+  rules: {
+    'camelcase': OFF,
+    'comma-dangle': [ ERROR, 'never' ],
+    'consistent-return': OFF,
+    'global-require': OFF,
+    'max-len': [ERROR, 140, 2, { 'ignoreUrls': true, 'ignoreComments': false }],
+    'new-cap': OFF,
+    'no-param-reassign': OFF,
+    'no-shadow': OFF,
+    'no-underscore-dangle': OFF,
+    'no-use-before-define': OFF,
+    'semi': [ ERROR, 'never' ],
+    'valid-jsdoc': ERROR
   }
 };
