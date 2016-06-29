@@ -17,6 +17,7 @@ module.exports = {
     'no-underscore-dangle': OFF,
     'no-use-before-define': OFF,
     'semi': [ ERROR, 'never' ],
-    'valid-jsdoc': ERROR
+    'valid-jsdoc': ERROR,
+    'react/jsx-curly-spacing': [ERROR, 'always', { 'allowMultiline': true }]
   }
 };
