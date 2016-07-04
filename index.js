@@ -18,6 +18,5 @@ module.exports = {
     'no-use-before-define': OFF,
     'semi': [ ERROR, 'never' ],
     'valid-jsdoc': ERROR,
-    'react/jsx-curly-spacing': [ERROR, 'always', { 'allowMultiline': true }]
   }
 };
