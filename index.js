@@ -7,7 +7,7 @@ module.exports = {
   extends: require.resolve('eslint-config-airbnb'),
   rules: {
     'camelcase': OFF,
-    'comma-dangle': [ ERROR, 'never' ],
+    'comma-dangle': [ ERROR, 'always-multiline' ],
     'consistent-return': OFF,
     'global-require': OFF,
     'max-len': [ERROR, 140, 2, { 'ignoreUrls': true, 'ignoreComments': false }],
