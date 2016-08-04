@@ -17,6 +17,7 @@ module.exports = {
     'comma-dangle': [ 'error', 'always-multiline' ],
     'consistent-return': 'off',
     'global-require': 'off',
+    'import/no-extraneous-dependencies': 'off',
     'max-len': ['error', 140, 2, { 'ignoreUrls': true, 'ignoreComments': false }],
     'new-cap': 'off',
     'no-param-reassign': 'off',
