@@ -1,22 +1,29 @@
-var OFF = 0;
-var WARNING = 1;
-var ERROR = 2;
-
 module.exports = {
   parser: require.resolve('babel-eslint'),
+  parserOptions: {
+    ecmaVersion: 6,
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
+      generators: true,
+      experimentalObjectRestSpread: true
+    }
+  },
+
   extends: require.resolve('eslint-config-airbnb'),
+
   rules: {
-    'camelcase': OFF,
-    'comma-dangle': [ ERROR, 'always-multiline' ],
-    'consistent-return': OFF,
-    'global-require': OFF,
-    'max-len': [ERROR, 140, 2, { 'ignoreUrls': true, 'ignoreComments': false }],
-    'new-cap': OFF,
-    'no-param-reassign': OFF,
-    'no-shadow': OFF,
-    'no-underscore-dangle': OFF,
-    'no-use-before-define': OFF,
-    'semi': [ ERROR, 'never' ],
-    'valid-jsdoc': ERROR,
+    'camelcase': 'off',
+    'comma-dangle': [ 'error', 'always-multiline' ],
+    'consistent-return': 'off',
+    'global-require': 'off',
+    'max-len': ['error', 140, 2, { 'ignoreUrls': true, 'ignoreComments': false }],
+    'new-cap': 'off',
+    'no-param-reassign': 'off',
+    'no-shadow': 'off',
+    'no-underscore-dangle': 'off',
+    'no-use-before-define': 'off',
+    'semi': [ 'error', 'never' ],
+    'valid-jsdoc': 'error',
   }
 };
