@@ -24,6 +24,7 @@ module.exports = {
     'no-shadow': 'off',
     'no-underscore-dangle': 'off',
     'no-use-before-define': 'off',
+    'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx'] }],
     'semi': [ 'error', 'never' ],
     'valid-jsdoc': 'error',
   }
