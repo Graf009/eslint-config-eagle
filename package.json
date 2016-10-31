@@ -1,6 +1,6 @@
 {
   "name": "@eagle/eslint-config-eagle",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Shared ESLint config",
   "main": "index.js",
   "repository": {
