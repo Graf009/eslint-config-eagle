@@ -2,12 +2,8 @@
 module.exports = {
   parser: require.resolve('babel-eslint'),
   parserOptions: {
-    ecmaVersion: 6,
-    sourceType: 'module',
     ecmaFeatures: {
-      jsx: true,
       generators: true,
-      experimentalObjectRestSpread: true,
     },
   },
 
@@ -15,18 +11,24 @@ module.exports = {
 
   rules: {
     'camelcase': 'off',
-    'comma-dangle': ['error', 'always-multiline'],
-    'consistent-return': 'off',
-    'global-require': 'off',
-    'import/no-extraneous-dependencies': 'off',
-    'max-len': ['error', 140, 2, { ignoreUrls: true, ignoreComments: false }],
-    'new-cap': 'off',
+    'consistent-return': 'warn',
+    'global-require': 'warn',
+    'max-len': ['error', 140, 2, {
+      ignoreUrls: true,
+      ignoreComments: false,
+      // ignoreRegExpLiterals: true, 3.9.x
+      ignoreStrings: true,
+      ignoreTemplateLiterals: true,
+    }],
     'no-param-reassign': 'off',
-    'no-shadow': 'off',
     'no-underscore-dangle': 'off',
-    'no-use-before-define': 'off',
-    'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx'] }],
+    'no-use-before-define': 'warn',
     'semi': ['error', 'never'],
     'valid-jsdoc': 'error',
+    'import/no-extraneous-dependencies': ['error', {
+      devDependencies: true,
+      optionalDependencies: false,
+    }],
+    'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx'] }],
   },
 }
