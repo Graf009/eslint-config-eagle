@@ -2,13 +2,15 @@
   "name": "@eagle/eslint-config-eagle",
   "version": "1.4.1",
   "description": "Shared ESLint config",
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/Graf009/eslint-config-eagle.git"
   },
   "author": "Oleg Orlov <mail@orlovoleg.com>",
   "license": "MIT",
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "preversion": "npm run lint",
     "lint": "eslint ."
